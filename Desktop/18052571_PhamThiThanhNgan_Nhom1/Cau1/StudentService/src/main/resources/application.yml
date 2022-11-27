@@ -1,0 +1,9 @@
+resilience4j.retry:
+    instances:
+        customer:
+            maxAttempts: 5
+            waitDuration: 10s
+
+
+#eureka client config
+
