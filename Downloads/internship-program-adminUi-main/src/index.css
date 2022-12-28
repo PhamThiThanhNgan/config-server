@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link-menu {
+    @apply px-[24px] py-[12px] text-black flex w-full h-full cursor-pointer transition duration-300 items-center;
+  }
+  .link-menu:hover {
+    @apply bg-[#F5F9FC];
+  }
+
+  .normal-pagination {
+    @apply shadow-sm px-3 py-2 text-center w-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 cursor-pointer;
+  }
+
+  .active-pagination {
+    @apply shadow-sm px-3 py-2 text-center w-11 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 cursor-default;
+  }
+
+  .prev-page-btn {
+    @apply shadow-sm block px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 cursor-pointer;
+  }
+
+  .next-page-btn {
+    @apply shadow-sm block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 cursor-pointer;
+  }
+
+  .disabled-prev-btn {
+    @apply shadow-sm block cursor-not-allowed px-3 py-2 ml-0 leading-tight text-gray-300 bg-white border border-gray-300 rounded-l-lg;
+  }
+
+  .disabled-next-btn {
+    @apply shadow-sm block cursor-not-allowed px-3 py-2 ml-0 leading-tight text-gray-300 bg-white border border-gray-300 rounded-r-lg;
+  }
+}
+
+html {
+  background-color: #f5f9fc;
+}
